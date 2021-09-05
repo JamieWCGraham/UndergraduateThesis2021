@@ -1,0 +1,54 @@
+Now, we restrict the space of our solutions \(q(x,t)\) to periodic, travelling waves moving at speed V, which allows us to apply a perturbative approach switching to the travelling reference frame of the waves q(x,t) \(\rightarrow\) \(q^{(0)}(x-Vt)\). From now on, we let z \(\rightarrow\) \(x-Vt\), so our \(0^{th}\) order term has a dimensional reduction \(q^{(0)}(x)\). The same travelling wave restriction also applies to \(\eta(x,t)\). 
+ 
+\begin{equation} \label{eq1}
+  V^2 \frac{\partial^2 u}{\partial^2 z}  - g \frac{\partial u}{\partial z}
+      + \frac{\sigma}{\rho} \frac{\partial^3 u}{ \partial z}
+      - \frac{D}{\rho} \frac{\partial^5 u}{ \partial z}  - f_{nl} = 0 \\
+\end{equation}
+ 
+ \vspace{10}
+ 
+We now consider a high frequency, small amplitude, first order perturbation of the system of the form:
+
+ \begin{equation} \label{eq1}
+ u(z,t) = u^{(0)}(z) + \delta_0 u^{(1)}(z,t)
+   \\
+\end{equation}
+
+ \begin{align*}
+ \hspace{120}  u(z,t) = u^{(0)}(z) + \delta_0 e^{-\lambda t}u^{(1)}(z)
+   \\
+ \end{align*} 
+
+
+\\
+ 
+ Where we have assumed the time dependent component of the first order perturbation belongs to the complex numbers. Assuming a small amplitude solution \(u^{(0)}(z) = \epsilon e^{ikr} cosh(k(h+z))\), the nonlinear term f in (8) vanishes. Substituting our small amplitude solution into (8) and Taylor expanding the hyperbolic tangent function around small kh and neglecting the small z term yields the expression:
+ 
+ \begin{equation} \label{eq1}
+V^2 k^3 h  - g k + \frac{\sigma k ^3}{\rho} - \frac{D k^5}{\rho} = 0
+   \\
+\end{equation}
+
+ 
+ Assuming the solution we are linearizing about is \(2\pi\) periodic, then without loss of generality we can define k = 1, and then our wave speed \(V_0\) can be solved for using (10) and then defined as:
+ 
+ 
+ \begin{equation} \label{eq1}
+V_0 = \sqrt{\frac{ g + \frac{D}{\rho} - \frac{\sigma}{\rho} }{h} } 
+   \\
+\end{equation}
+ 
+ 
+ 
+ 
+ 
+ Substituting our perturbative solution (9) into (8) yields a spectral problem—a generalized eigenvector/eigenvalue equation—for the first order perturbation term as an eigenfunction. The spectral problem is:
+ 
+  \begin{equation} \label{eq1}
+ \lambda u^{(1)}(z) =  g \frac{\partial u^{(1)}(z)}{\partial z}
+      - \frac{\sigma}{\rho} \frac{\partial^3 u^{(1)}(z)}{\partial z^3}
+      + \frac{D}{\rho} \frac{\partial^5 u^{(1)}(z)}{\partial z^5}  + g(u_z^{(0)},u_z^{(1)}) 
+\end{equation}
+
+Where g denotes the nonlinearity that may be ignored in our small amplitude solution regime. This generalized eigenvalue equation (12) is characterized as a spectral problem due to the spectrum of eigenvalues associated with the eigenfunction \(u^{(1)}(z)\). \\
